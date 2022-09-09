@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
     # Obtener la lista de precios ordenadas de menor a mayor
     precios_menor_mayor = ordenar_menor_mayor(productos)
-    b = 1
+    b = 2
 
     
     # Imprimir la lista de precios ordenada

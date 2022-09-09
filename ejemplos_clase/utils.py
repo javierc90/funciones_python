@@ -1,14 +1,14 @@
-# Funciones [Python]
-# Ejemplos de clase
-
-# Autor: Inove Coding School
-# Version: 2.2
-
-# Ejemplos de funciones con listas, 
-# y como invocar módulos de python
-
 import random
 
+
+def imprimir_nombre(nombre, apellido):
+    nombre_completo = nombre + ' ' + apellido
+    print(nombre_completo)
+
+
+def cantidad_productos():
+    productos_comprados = int(input("¿Cuántos productos compró?: "))
+    return productos_comprados
 
 def precio_productos(cantidad_productos):
     productos = []  # lista donde almacenaremos los precios, comienza vacia
@@ -37,29 +37,20 @@ def precio_productos_aleatorios(cantidad, valor_min = 1, valor_max = 1000 ):
     # Retornar la lista de precios de productos
     return productos
 
-
-if __name__ == '__main__':
-    print("Bienvenidos a otra clase de Inove con Python")
-
-    # Cantidad de productos comprados (del ejemplo anterior)
-    cantidad = 3
-
-    # Ingresar los precios de los productos comprados
-    precios = precio_productos(cantidad)
-
-    # Imprimir los precios de los productos comprados
-    print("Precios de los productos comprados:")
-    print(precios)
-
-    # Generar aleatoriamente precios para los productos comprados
-    # En este ejemplo se visibiliza que valor se asigna a cada parámetro
-    precios_aleatorios = precio_productos_aleatorios(valor_min=10, valor_max=150, cantidad=cantidad)
-
-    # Imprimir los precios de los productos comprados
-    print("Precios aleatorios de los productos comprados:")
-    print(precios_aleatorios)
-
-    print("terminamos")
+def calcular_precio_total(lista_productos):
+    precio_total = sum(lista_productos)
+    return precio_total
 
 
+def calcular_precio_total_bucle(lista_productos):
+    precio_total = 0
+    # Profesor: Implementar un bucle que
+    # recorra la variable "lista_productos"
+    # y obtener el precio total de la lista
 
+    precio_total = 0
+    for precio in lista_productos:
+        precio_total += precio
+    return precio_total
+
+print(__name__)

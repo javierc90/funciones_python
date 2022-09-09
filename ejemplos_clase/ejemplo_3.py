@@ -18,14 +18,18 @@ def calcular_precio_total_bucle(lista_productos):
     # recorra la variable "lista_productos"
     # y obtener el precio total de la lista
 
+    precio_total = 0
+    for precio in lista_productos:
+        precio_total += precio
     return precio_total
+
 
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
 
     # Lista productos comprados (del ejemplo anterior)
-    productos = [10, 5, 50, 45]
+    productos = [10, 5, 50, 45, 10, 30]
 
     # Obtener cual es el el precio de productos
     # en la lista
@@ -40,7 +44,7 @@ if __name__ == '__main__':
     # Profesor: Implementar lo detallado
     # en la función "calcular_precio_total_bucle"
 
-    # precio_total_2 = calcular_precio_total_bucle(productos)
-    # print("Precio total de la lista de producto:", precio_total_2)
+    precio_total_2 = calcular_precio_total_bucle(productos)
+    print("Precio total de la lista de producto:", precio_total_2)
 
     print("terminamos")

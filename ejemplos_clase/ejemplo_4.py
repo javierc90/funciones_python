@@ -6,7 +6,7 @@
 
 # Ejemplos de funciones uso
 # de la funcion "sorted" de python
-
+a = 1
 
 def ordenar_menor_mayor(lista_productos):
     precios_ordenados = sorted(lista_productos)
@@ -35,7 +35,9 @@ if __name__ == '__main__':
 
     # Obtener la lista de precios ordenadas de menor a mayor
     precios_menor_mayor = ordenar_menor_mayor(productos)
+    b = 1
 
+    
     # Imprimir la lista de precios ordenada
     print("Lista de precios ordenada de menor a mayor:")
     print(precios_menor_mayor)

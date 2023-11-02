@@ -6,7 +6,7 @@
 
 # Ejemplos de llamada a funciones
 def imprimir_nombre(nombre, apellido):
-    nombre_completo = nombre + 'jhgcjhgcjh' + apellido
+    nombre_completo = nombre + ' ' + apellido
     print(nombre_completo)
 
 
